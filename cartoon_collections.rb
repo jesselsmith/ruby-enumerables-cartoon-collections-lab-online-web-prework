@@ -29,3 +29,5 @@ def find_the_cheese(recipe)
   end
   nil
 end
+
+find_the_cheese()
