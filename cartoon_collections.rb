@@ -23,9 +23,8 @@ def find_the_cheese(recipe)
   cheese_types = ["cheddar", "gouda", "camembert"]
   recipe.reduce do |ingredient|
     if cheese_types.include? ingredient
-      
+      puts ingredient
       return ingredient
-      put 
     end
   end
   nil
