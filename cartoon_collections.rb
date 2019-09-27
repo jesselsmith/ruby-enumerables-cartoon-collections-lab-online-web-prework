@@ -14,7 +14,7 @@ end
 
 def long_planeteer_calls(words)
   words.any? { |word|
-    word
+    word.length 
   }
 end
 
