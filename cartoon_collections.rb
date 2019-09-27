@@ -21,8 +21,10 @@ end
 def find_the_cheese(recipe)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  first_cheese = nil
-  ingredients.reduce{ |ingredient, 
-  ingredients.include? 
-  
+  recipe.reduce do |ingredient|
+    if cheese_types.include? ingredient
+      return ingredient
+    end
+  end
+  nil
 end
